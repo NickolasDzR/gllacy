@@ -20,7 +20,7 @@
   <input type="radio" class="visually-hidden" id="product-1" name="toggle" checked>
   <input type="radio" class="visually-hidden" id="product-2" name="toggle">
   <input type="radio" class="visually-hidden" id="product-3" name="toggle">
-  <div class="main-container">
+  <main class="main-container">
     <div class="wrapper-content">
       <header>
         <div class="container">
@@ -55,11 +55,11 @@
           <div class="row">
             <div class="col-12">
               <div class="slider-controls">
-                <label for="product-1">Первый
+                <label class="labe-prod-1" for="product-1">Первый
                 </label>
-                <label for="product-2">Второй
+                <label class="labe-prod-2" for="product-2">Второй
                 </label>
-                <label for="product-3">Третий
+                <label class="labe-prod-3" for="product-3">Третий
                 </label>
               </div>
               <ul class="slider-list">
@@ -83,8 +83,29 @@
     </div>
   </div>
   </div>
-  <script src="js/script.js"></script>
-  <script src="js/jquery.js"></script>
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/script.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".labe-prod-1").on("click", function(event) {
+         $("main").addClass("product-1");
+         $("main").removeClass("product-2");
+         $("main").removeClass("product-3");
+      });
+      $(".labe-prod-2").on("click", function(event) {
+         $("main").addClass("product-2");
+         $("main").removeClass("product-1");
+         $("main").removeClass("product-3");
+      });
+      $(".labe-prod-3").on("click", function(event) {
+         $("main").addClass("product-3");
+         $("main").removeClass("product-2");
+         $("main").removeClass("product-1");
+      });
+    });
+  </script>
   <script src="slick/slick.min.js"></script>
 </body>
 

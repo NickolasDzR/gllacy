@@ -142,6 +142,8 @@ header {
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 
+
+
 .slider-controls label {
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -161,6 +163,8 @@ header {
 .slide {
   display: none;
 }
+
+/*
 #product-1:checked ~ .main-container #slide-1,
 #product-2:checked ~ .main-container #slide-2,
 #product-3:checked ~ .main-container #slide-3 {
@@ -184,6 +188,27 @@ header {
   background-position: top center;
 }
 #product-3:checked ~ .main-container {
+  background-color: #9d8b84;
+  background-image: url("../img/slider-item3.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+*/
+
+.product-1 {
+  background-color: #849d8f;
+  background-image: url("../img/slider-item1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.product-2 {
+  background-color: #8996a6;
+  background-image: url("../img/slider-item2.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.product-3 {
   background-color: #9d8b84;
   background-image: url("../img/slider-item3.png");
   background-repeat: no-repeat;
