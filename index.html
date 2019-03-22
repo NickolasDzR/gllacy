@@ -16,11 +16,12 @@
 </head>
 
 <body>
-
+  <!--
   <input type="radio" class="visually-hidden" id="product-1" name="toggle" checked>
   <input type="radio" class="visually-hidden" id="product-2" name="toggle">
   <input type="radio" class="visually-hidden" id="product-3" name="toggle">
-  <main class="main-container">
+  -->
+  <main class="main-container product-1">
     <div class="wrapper-content">
       <header>
         <div class="container">
@@ -55,7 +56,7 @@
           <div class="row">
             <div class="col-12">
               <div class="slider-controls">
-                <label class="labe-prod-1" for="product-1">Первый
+                <label class="labe-prod-1 checked-bg" for="product-1">Первый
                 </label>
                 <label class="labe-prod-2" for="product-2">Второй
                 </label>
@@ -63,15 +64,15 @@
                 </label>
               </div>
               <ul class="slider-list">
-                <li class="slider-item slide" id="slide-1">
+                <li class="slider-item-1 slide-block">
                   <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
                   <a href="#smth" class="buttons slide-button">Давайте оба!</a>
                 </li>
-                <li class="slider-item slide" id="slide-2">
+                <li class="slider-item-2 slide">
                   <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
                   <a href="#smth" class="buttons slide-button">Давайте оба!</a>
                 </li>
-                <li class="slider-item slide" id="slide-3">
+                <li class="slider-item-3 slide">
                   <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
                   <a href="#smth" class="buttons slide-button">Давайте оба!</a>
                 </li>
@@ -80,29 +81,83 @@
           </div>
         </div>
       </section>
+      <section class="main-section">
+        <div class="container">
+          <div class="row">
+            <div class="promo-container">
+              <div class="raspberry-container">
+                <h3 class="free-raspberry">Малинка даром!</h3>
+                <p class="offer-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+                  малинового варенья бесплатно.</p>
+                <a href="#smth" class="jam"></a>
+              </div>
+              <div class="chocolate-container">
+                <h3 class="free-chocolate">Малинка даром!</h3>
+                <p class="offer-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку
+                  малинового варенья бесплатно.</p>
+                <a href="#smth" class="chocolate"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <content class="item-ice">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <img src="img/ice-1.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+              <p class="ice-cost">310&#8381;/кг</p>
+              <p class="text-about-ice">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </div>
+            <div class="col-3">
+              <img src="img/ice-2.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+              <p class="ice-cost">380&#8381;/кг</p>
+              <p class="text-about-ice">Сливочно-кофейное с кусочками шоколада</p>
+            </div>
+            <div class="col-3">
+              <img src="img/ice-3.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+              <p class="ice-cost">355&#8381;/кг</p>
+              <p class="text-about-ice">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </div>
+            <div class="col-3">
+              <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+              <p class="ice-cost">415&#8381;/кг</p>
+              <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+            </div>
+          </div>
+        </div>
+      </content>
     </div>
-  </div>
-  </div>
+  </main>
   <script src="js/jquery.js">
   </script>
   <script src="js/script.js">
   </script>
   <script>
     $(document).ready(function () {
-      $(".labe-prod-1").on("click", function(event) {
-         $("main").addClass("product-1");
-         $("main").removeClass("product-2");
-         $("main").removeClass("product-3");
+      $(".labe-prod-1").on("click", function (event) {
+        $("main").addClass("product-1");
+        $(".labe-prod-1").addClass("checked-bg");
+        $(".slider-item-1").addClass("slide-block");
+        $(".labe-prod-2, .labe-prod-3").removeClass("checked-bg");
+        $(".slider-item-2, .slider-item-3").removeClass("slide-block");
+        $("main").removeClass("product-2 && product-3");
       });
-      $(".labe-prod-2").on("click", function(event) {
-         $("main").addClass("product-2");
-         $("main").removeClass("product-1");
-         $("main").removeClass("product-3");
+      $(".labe-prod-2").on("click", function (event) {
+        $("main").addClass("product-2");
+        $(".labe-prod-2").addClass("checked-bg");
+        $(".slider-item-2").addClass("slide-block");
+        $(".labe-prod-1, .labe-prod-3").removeClass("checked-bg");
+        $(".slider-item-1, .slider-item-3").removeClass("slide-block");
+        $("main").removeClass("product-1 && product-3");
       });
-      $(".labe-prod-3").on("click", function(event) {
-         $("main").addClass("product-3");
-         $("main").removeClass("product-2");
-         $("main").removeClass("product-1");
+      $(".labe-prod-3").on("click", function (event) {
+        $("main").addClass("product-3");
+        $(".labe-prod-3").addClass("checked-bg");
+        $(".slider-item-3").addClass("slide-block");
+        $(".labe-prod-1, .labe-prod-2").removeClass("checked-bg");
+        $(".slider-item-1, .slider-item-2").removeClass("slide-block");
+        $("main").removeClass("product-1 && product-2");
       });
     });
   </script>
