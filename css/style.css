@@ -468,4 +468,26 @@ header {
   line-height: 24px;
   border: none;
 }
+.map iframe {
+  border: none;
+}
+.footer {
+  height: 100px;
+}
 /* about us block */
+
+/*footer*/
+.social li{
+  display: inline-block;
+}
+.suppliers,
+.documents {
+  width: 50%;
+}
+.footer-wrapp {
+  display: flex;
+}
+.suppliers {
+  text-align: end;
+}
+/*footer*/
