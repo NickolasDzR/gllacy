@@ -8,7 +8,7 @@ body {
   background-color: #849d8f;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 ul,
 li {
@@ -596,27 +596,43 @@ header {
 }
 .map {
   position: relative;
-  width: 100%;
+  height: 430px;
   border: none;
   margin: 0 auto;
 }
 .adress,
-.phone {
+.phone,
+.schedule {
   color: #323232;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
-.city,
+.schedule {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+.city {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
 .number {
   color: #323232;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 3px;
 }
 .adress-block {
   width: 302px;
@@ -632,35 +648,95 @@ header {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  border-radius: 10px;
+  border-radius: 23px;
   color: #fefefe;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   border: none;
+  padding: 9px 27px 12px 28px;
 }
 .map iframe {
   border: none;
 }
-.footer {
-  height: 100px;
-}
 /* about us block */
 
 /*footer*/
+footer {
+  height: 103px;
+}
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0 1.9%;
+  align-items: center;
+}
+.col-social {
+  width: 196px;
+}
+.social-block {
+  height: 100%;
+  display: flex;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5px;
+  margin-top: 5px;
+}
 .social li{
   display: inline-block;
+  opacity: 0.8;
+  border: 3px solid rgba(255,254,255,0.6);
+  border-radius: 50%;
 }
 .suppliers,
 .documents {
   width: 50%;
 }
-.footer-wrapp {
+.adress-suppliers a,
+.our-documents a {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.col-links {
+  flex-grow: 1;
+}
+.footer-links {
   display: flex;
+}
+.col-siteby {
+  width: 193px;
+}
+.logo-img svg {
+  width: 121px;
+}
+.logo-list {
+  height: 69px;
+}
+.logo-list li:nth-child(1) {
+  padding: 0 4px;
+}
+.logo-list li:nth-child(2) {
+  color: #fefefe;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 5px 0;
 }
 .suppliers {
   text-align: end;
+  padding: 0 40px;
+}
+.documents {
+  margin-left: -9px;
 }
 .broadcrumps-list li {
   display: inline-block;
