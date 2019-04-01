@@ -272,43 +272,40 @@
             </ul>
           </div>
         </div>
-    </div>
-    </div>
-  </main>
-  </footer>
-  <script src="js/jquery.js">
-  </script>
-  <script src="js/script.js">
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".labe-prod-1").on("click", function (event) {
-        $(".main-container").addClass("product-1");
-        $(".labe-prod-1").addClass("checked-bg");
-        $(".slider-item-1").addClass("slide-block");
-        $(".labe-prod-2, .labe-prod-3").removeClass("checked-bg");
-        $(".slider-item-2, .slider-item-3").removeClass("slide-block");
-        $(".main-container").removeClass("product-2 && product-3");
-      });
-      $(".labe-prod-2").on("click", function (event) {
-        $(".main-container").addClass("product-2");
-        $(".labe-prod-2").addClass("checked-bg");
-        $(".slider-item-2").addClass("slide-block");
-        $(".labe-prod-1, .labe-prod-3").removeClass("checked-bg");
-        $(".slider-item-1, .slider-item-3").removeClass("slide-block");
-        $(".main-container").removeClass("product-1 && product-3");
-      });
-      $(".labe-prod-3").on("click", function (event) {
-        $(".main-container").addClass("product-3");
-        $(".labe-prod-3").addClass("checked-bg");
-        $(".slider-item-3").addClass("slide-block");
-        $(".labe-prod-1, .labe-prod-2").removeClass("checked-bg");
-        $(".slider-item-1, .slider-item-2").removeClass("slide-block");
-        $(".main-container").removeClass("product-1 && product-2");
-      });
-    });
-  </script>
-  <script src="slick/slick.min.js"></script>
+      </footer>
+      <script src="js/jquery.js">
+      </script>
+      <script src="js/script.js">
+      </script>
+      <script>
+        $(document).ready(function () {
+          $(".labe-prod-1").on("click", function (event) {
+            $(".main-container").addClass("product-1");
+            $(".labe-prod-1").addClass("checked-bg");
+            $(".slider-item-1").addClass("slide-block");
+            $(".labe-prod-2, .labe-prod-3").removeClass("checked-bg");
+            $(".slider-item-2, .slider-item-3").removeClass("slide-block");
+            $(".main-container").removeClass("product-2 && product-3");
+          });
+          $(".labe-prod-2").on("click", function (event) {
+            $(".main-container").addClass("product-2");
+            $(".labe-prod-2").addClass("checked-bg");
+            $(".slider-item-2").addClass("slide-block");
+            $(".labe-prod-1, .labe-prod-3").removeClass("checked-bg");
+            $(".slider-item-1, .slider-item-3").removeClass("slide-block");
+            $(".main-container").removeClass("product-1 && product-3");
+          });
+          $(".labe-prod-3").on("click", function (event) {
+            $(".main-container").addClass("product-3");
+            $(".labe-prod-3").addClass("checked-bg");
+            $(".slider-item-3").addClass("slide-block");
+            $(".labe-prod-1, .labe-prod-2").removeClass("checked-bg");
+            $(".slider-item-1, .slider-item-2").removeClass("slide-block");
+            $(".main-container").removeClass("product-1 && product-2");
+          });
+        });
+      </script>
+      <script src="slick/slick.min.js"></script>
 </body>
 
 </html>

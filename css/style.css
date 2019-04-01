@@ -719,79 +719,10 @@ footer {
   font-weight: 400;
   line-height: 18px;
 }
-.broadcrumps-list li {
-  display: inline-block;
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-}
-.broadcrumps-list li:not(:nth-child(1))::before {
-  content: "»";
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-}
-.wrapper-controller {
-  background-color: #abbcb2;
-  width: 220px;
-  height: 37px;
-  position: relative;
-  border-radius: 20px;
-}
-.long-line {
-  width: 176px;
-  height: 4px;
-  background-color: #000;
-  opacity: 0.5;
-  position: absolute;
-  top: 16px;
-  left: 24px;
-}
-.short-line {
-  width: 107px;
-  height: 4px;
-  background-color: green;
-  opacity: 1;
-  position: absolute; 
-  top: 16px;
-  left: 35px;
-}
-.sircle-sml_left {
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  border: 10px solid black;
-  border-radius: 50%;
-  position: absolute;
-  top: 6px;
-  left: 31px;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-.sircle-sml_right {
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  border: 10px solid black;
-  border-radius: 50%;
-  position: absolute;
-  top: 6px;
-  right: 62px;
-  box-sizing: content-box;
-  cursor: pointer;
-}
 .fatness {
   position: relative;
-}
-.fatness label,
-.fillers label{
   padding: 0;
   margin: 0;
-  cursor: pointer;
 }
 .fatness p,
 .fillers p{
@@ -830,10 +761,6 @@ input:checked + .checkbox-square {
   width: 24px;
   height: 20px;
 }
-.fatness-block,
-.fillers {
-  background-color: #abbcb2;
-}
 .apply-button {
   border: 2px solid #ffffff;
   background-color: #a6b8ae;
@@ -861,4 +788,179 @@ input:checked + .checkbox-square {
   padding: 7px 11px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+
+/* catalog */
+
+.broadcrumps-list {
+  padding: 14px 11px 1px 11px;
+}
+.broadcrumps-list li {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0 17px 0 1px;
+}
+.broadcrumps-list li:not(:nth-child(1))::before {
+  content: "»";
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  position: absolute;
+  left: -14px;
+}
+.milky-icecream {
+  margin: 0;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  padding: 0px 13px 9px;
+}
+.sort-label {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 17px 12px 15px 28px;
+  margin: 0;
+}
+.sort-span{
+  display: inline;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 17px;
+  padding: 8px 49px 10px 16px;
+  margin: 0 11px;
+}
+.sort {
+  width: 250px;
+}
+.sort-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px 15px;
+}
+.col-sort {
+  flex: 0 0 18.5%;
+  max-width: 18.5%;
+}
+.col-cost {
+  flex: 0 0 19.8%;
+  max-width: 19.8%;
+}
+.col-fatty {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.cost {
+  padding: 0 5px;
+}
+.cost-label {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
+  padding: 17px 19px 7px 14px;
+}
+.wrapper-controller {
+  background-color: #abbcb2;
+  width: 218px;
+  height: 37px;
+  position: relative;
+  border-radius: 20px;
+}
+.sircle-sml_left {
+  width: 2.5px;
+  height: 2.5px;
+  background-color: #ababab;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 34px;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.sircle-sml_right {
+  width: 2.5px;
+  height: 2.5px;
+  background-color: #ababab;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  right: 66px;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+.long-line {
+  width: 176px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+  position: absolute;
+  top: 16px;
+  left: 21px;
+}
+.short-line {
+  width: 107px;
+  height: 4px;
+  background-color: rgba(255,255,255, 0.8);
+  opacity: 1;
+  position: absolute; 
+  top: 16px;
+  left: 35px;
+}
+.checkbox-label p {
+  margin: 0;
+  padding: 0;
+}
+.fatness-paragraph {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 0 21px;
+}
+.fatness-block {
+  margin-top: 15px;
+}
+.checkbox-wrapper {
+  padding: 12px 21px;
+}
+.checkbox-label {
+  padding: 8px 0 0px 15px;
+  background-color: #abbcb2;
+  border-radius: 30px;
+  width: 88.8%;
+  margin: 4px 6px;
+}
+.filter-checkbox {
+  margin-left: 32px;
+  margin-right: 14px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
 }
