@@ -964,3 +964,7 @@ input:checked + .checkbox-square {
   line-height: 18px;
   cursor: pointer;
 }
+.col-broadcrumps {
+  display: flex;
+  min-width: 70%;
+}
