@@ -51,109 +51,100 @@
     </header>
     <main>
       <div class="col-broadcrumps">
-          <ul class="broadcrumps-list">
-            <li>Главная</li>
-            <li>Каталог</li>
-            <li>Сливочное</li>
-          </ul>
+        <ul class="broadcrumps-list">
+          <li>Главная</li>
+          <li>Каталог</li>
+          <li>Сливочное</li>
+        </ul>
       </div>
       <div class="headline">
-            <div class="col-header">
-              <h1 class="milky-icecream">Сливочное мороженое</h1>
-            </div>
+        <div class="col-header">
+          <h1 class="milky-icecream">Сливочное мороженое</h1>
+        </div>
       </div>
       <div class="sort-wrapper">
-        <div class="col-sort">
-          <div class="sort">
-            <p class="sort-label">Сортировка:</p>
-            <p class="sort-span">по популярности</p>
-          </div>
-        </div>
-        <div class="col-cost">
-          <div class="cost">
-            <p class="cost-label">Цена: 100 руб. – 500 руб.</p>
+        <form action="GET">
+          <fieldset class="col-sort">
+            <legend class="legend-sort">Сортировка:</legend>
+            <div class="sort-span">по популярности</div>
+          </fieldset>
+          <fieldset class="col-cost">
+            <legend class="legend-cost">Цена: 100 руб. – 500 руб.</legend>
             <div class="wrapper-controller">
               <div class="long-line"></div>
               <div class="short-line"></div>
               <div class="sircle-sml_left"></div>
               <div class="sircle-sml_right"></div>
             </div>
-          </div>
-        </div>
-        <div class="col-fatty">
-          <div class="fatness-block">
-            <fieldset class="fatness">
-              <p class="fatness-paragraph">Жирность:</p>
+          </fieldset>
+          <fieldset class="col-fatty">
+            <legend class="legend-fatty">Жирность:</legend>
+            <div class="fatness">
               <label class="checkbox-label">
-                <p><label class="filter-checkbox">
+                <p><label class="filter-checkbox-circle">
                     <input class="visually-hidden" type="checkbox">
                     <span class="checkbox-circle"></span>
                     0%
                   </label>
                 </p>
-                <p><label class="filter-checkbox">
+                <p><label class="filter-checkbox-circle">
                     <input class="visually-hidden" type="checkbox">
                     <span class="checkbox-circle"></span>
                     до 10%
                   </label>
                 </p>
-                <p><label class="filter-checkbox">
+                <p><label class="filter-checkbox-circle">
                     <input class="visually-hidden" type="checkbox">
                     <span class="checkbox-circle"></span>
                     до 30%
                   </label>
                 </p>
-                <p><label class="filter-checkbox">
+                <p><label class="filter-checkbox-circle">
                     <input class="visually-hidden" type="checkbox">
                     <span class="checkbox-circle"></span>
                     выше 30%
                   </label>
                 </p>
               </label>
-            </fieldset>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
-            <div class="fillers">
-              <fieldset class="square">
-                <p><label class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox">
-                    <span class="checkbox-square"></span>
-                    шоколадные
-                  </label>
-                </p>
-                <p><label class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox">
-                    <span class="checkbox-square"></span>
-                    сахарные присыпки
-                  </label>
-                </p>
-                <p><label class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox">
-                    <span class="checkbox-square"></span>
-                    фрукты
-                  </label>
-                </p>
-                <p><label class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox">
-                    <span class="checkbox-square"></span>
-                    сиропы
-                  </label>
-                </p>
-                <p><label class="filter-checkbox">
-                    <input class="visually-hidden" type="checkbox">
-                    <span class="checkbox-square"></span>
-                    джемы
-                  </label>
-                </p>
-              </fieldset>
             </div>
-          </div>
-          <div class="col-1"><button class="apply-button">Применить</button></div>
-        </div>
+          </fieldset>
+          <fieldset class="col-fillers">
+            <legend class="legend-fill">Наполнители:</legend>
+            <div class="fillers">
+              <p><label class="filter-checkbox-square">
+                  <input class="visually-hidden" type="checkbox">
+                  <span class="checkbox-square"></span>
+                  шоколадные
+                </label>
+              </p>
+              <p><label class="filter-checkbox-square">
+                  <input class="visually-hidden" type="checkbox">
+                  <span class="checkbox-square"></span>
+                  сахарные присыпки
+                </label>
+              </p>
+              <p><label class="filter-checkbox-square">
+                  <input class="visually-hidden" type="checkbox">
+                  <span class="checkbox-square"></span>
+                  фрукты
+                </label>
+              </p>
+              <p><label class="filter-checkbox-square">
+                  <input class="visually-hidden" type="checkbox">
+                  <span class="checkbox-square"></span>
+                  сиропы
+                </label>
+              </p>
+              <p><label class="filter-checkbox-square">
+                  <input class="visually-hidden" type="checkbox">
+                  <span class="checkbox-square"></span>
+                  джемы
+                </label>
+              </p>
+            </div>
+          </fieldset>
+          <button class="accept">Применить</button>
+        </form>
       </div>
       <section class="item-ice">
         <div class="container">
@@ -198,75 +189,75 @@
             <div class="col-3">
               <div class="ice-wrapper">
                 <img src="img/milky-br.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <p class="ice-cost">325₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочное с брусничным джемом</p>
               </div>
             </div>
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-bl.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">410₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочно-черничное с цельными ягодами черники</p>
               </div>
             </div>
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-yel.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">375₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочно-лимонное с карамельной присыпкой</p>
               </div>
             </div>
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-wh.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">320₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочное с шоколадной стружкой</p>
               </div>
             </div>
             <!---->
             <!---->
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-gr.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">440₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочно-ванильное с кусочками шоколада</p>
               </div>
             </div>
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-blue.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">435₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочноe с ментоловым сиропом</p>
               </div>
             </div>
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-chk.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">355₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочное с кусочками черного шоколада</p>
               </div>
             </div>
             <div class="col-3">
               <div class="ice-wrapper">
-                <img src="img/ice-4.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
-                <p class="ice-cost">415₽<span>/кг</span></p>
+                <img src="img/milky-pist.png" alt="Картинки мороженного" class="item-ice_1" href="#smth">
+                <p class="ice-cost">420₽<span>/кг</span></p>
               </div>
               <div class="text-wrapper">
-                <p class="text-about-ice">Сливочное крем-брюле с карамельной подливкой</p>
+                <p class="text-about-ice">Сливочное с мятным сиропом</p>
               </div>
             </div>
             <!---->

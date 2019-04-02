@@ -23,6 +23,10 @@ li {
   height: 1px;
   margin: -1px;
 }
+label {
+  margin: 0;
+  padding: 0;
+}
 header {
   padding: 9px 0;
 }
@@ -724,40 +728,53 @@ footer {
   padding: 0;
   margin: 0;
 }
-.fatness p,
-.fillers p{
+.fillers {
+  background-color: #abbcb2;
+  border-radius: 30px;
+  width: 704px;
+}
+.fatness p {
   position: relative;
   display: inline-block;
+}
+.fillers p {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.fillers label {
+  margin-bottom: 0px;
 }
 input + .checkbox-circle {
   background-image: url("../img/radio-off.svg");
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 7px;
+  left: 14px;
   width: 22px;
   height: 22px;
 }
 input:checked + .checkbox-circle {
   background-image: url("../img/radio-on.svg");
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 7px;
+  left: 14px;
   width: 22px;
   height: 22px;
 }
 input + .checkbox-square {
   background-image: url("../img/square-off.svg");
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 7px;
+  left: 17px;
   width: 20px;
   height: 20px;
 }
 input:checked + .checkbox-square {
   background-image: url("../img/square-on.svg");
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 7px;
+  left: 17px;
   width: 24px;
   height: 20px;
 }
@@ -793,7 +810,7 @@ input:checked + .checkbox-square {
 /* catalog */
 
 .broadcrumps-list {
-  padding: 14px 11px 1px 11px;
+  padding: 14px 11px 1px 26.5px;
 }
 .broadcrumps-list li {
   position: relative;
@@ -822,7 +839,8 @@ input:checked + .checkbox-square {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
-  padding: 0px 13px 9px;
+  padding: 0px 27px;
+  margin-bottom: 9px;
 }
 .sort-label {
   color: #ffffff;
@@ -830,11 +848,10 @@ input:checked + .checkbox-square {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  padding: 17px 12px 15px 28px;
+  padding: 18px 11px 6px 28px;
   margin: 0;
 }
 .sort-span{
-  display: inline;
   color: #ffffff;
   font-family: Roboto;
   font-size: 16px;
@@ -842,28 +859,71 @@ input:checked + .checkbox-square {
   line-height: 18px;
   background-color: rgba(255,255,255, 0.2);
   border-radius: 17px;
-  padding: 8px 49px 10px 16px;
-  margin: 0 11px;
-}
-.sort {
-  width: 250px;
+  padding: 8px 25px 10px 16px;
+  margin-left: 12px;
 }
 .sort-wrapper {
+  padding: 15px 15px;
+  margin-bottom: 23px;
+}
+.sort-wrapper fieldset {
+  display: block;
+}
+.sort-wrapper legend {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.legend-sort {
+  padding: 0;
+  margin: 0;
+  padding: 2px 20px 7px 29px;
+}
+.legend-cost {
+  padding: 0;
+  margin: 0;
+  padding: 2px 20px 7px 15px;
+}
+.legend-fatty {
+  padding: 0;
+  margin: 0;
+  padding: 2px 15px 7px 15px;
+}
+.legend-fill {
+  padding: 14px 16px 6px 17px;
+  margin: 0;
+}
+.sort-wrapper form {
+  width: 875px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 15px 15px;
 }
 .col-sort {
-  flex: 0 0 18.5%;
-  max-width: 18.5%;
+  padding: 0;
+  margin: 0;
+  width: 23.521%;
+  margin-right: 7.5px;
 }
 .col-cost {
-  flex: 0 0 19.8%;
-  max-width: 19.8%;
+  padding: 0;
+  margin: 0;
+  width: 24.99%;
+  margin: 0 7.5px;
 }
 .col-fatty {
-  flex: 0 0 40%;
-  max-width: 40%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 47.411%;
+  margin-left: 7.5px;
+}
+.col-fillers {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding: 2px 11px;
 }
 .cost {
   padding: 0 5px;
@@ -875,11 +935,10 @@ input:checked + .checkbox-square {
   font-weight: 500;
   line-height: 16px;
   margin: 0;
-  padding: 17px 19px 7px 14px;
+  padding: 17px 9px 7px 14px;
 }
 .wrapper-controller {
   background-color: #abbcb2;
-  width: 218px;
   height: 37px;
   position: relative;
   border-radius: 20px;
@@ -931,40 +990,64 @@ input:checked + .checkbox-square {
   padding: 0;
 }
 .fatness-paragraph {
-  width: 100%;
   margin: 0;
-  padding: 0;
   color: #ffffff;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  padding: 0 21px;
-}
-.fatness-block {
-  margin-top: 15px;
+  padding: 0 16px;
+  width: 100%;
 }
 .checkbox-wrapper {
   padding: 12px 21px;
 }
 .checkbox-label {
-  padding: 8px 0 0px 15px;
+  margin: 0;
+  padding: 0;
   background-color: #abbcb2;
   border-radius: 30px;
-  width: 88.8%;
-  margin: 4px 6px;
+  width: 100%;
 }
-.filter-checkbox {
-  margin-left: 32px;
-  margin-right: 14px;
+.filter-checkbox-circle {
   color: #ffffff;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   cursor: pointer;
+  padding: 8px 0px 10px 46px;
+}
+.filter-checkbox-square {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  padding: 7px 0px 10px 49.4px;
 }
 .col-broadcrumps {
   display: flex;
   min-width: 70%;
+}
+.accept {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 144px;
+  height: 37px;
+  border-radius: 20px;
+  margin-top: 36px;
+  margin-left: 3px;
+}
+.item-ice .col-3 {
+  margin-bottom: 23px;
+}
+.item-ice .col-3 p {
+  padding: 0 10px;
 }
