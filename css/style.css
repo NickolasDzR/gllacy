@@ -660,6 +660,8 @@ footer {
   height: 100%;
   margin: 0 1.9%;
   align-items: center;
+  border-top: 1px solid rgba(255,255,255, 0.3);
+  padding: 18px 0;
 }
 .col-social {
   width: 197px;
@@ -790,25 +792,44 @@ input:checked + .checkbox-square {
   line-height: 18px;
 }
 .number-page_item {
+  position: relative;
   width: 100%;
   text-align: end;
+  padding: 22px 49.9px 32px 48.9px;
 }
-.number-list::before,
+.number-list::before {
+  content: url("../img/next-page.svg");
+  cursor: pointer;
+  position: absolute;
+  top: 21.7px;
+  right: 210px;
+  transform: rotate(177deg);
+}
 .number-list::after {
   content: url("../img/next-page.svg");
   cursor: pointer;
+  position: absolute;
+  right: 27px;
+  top: 24px;
 }
 .number-list li{
   display: inline-block;
+  margin-right: -1.1px;
 }
 .number-page {
-  padding: 7px 11px;
-  background-color: #ffffff;
+  padding: 4px 9px;
   border-radius: 50%;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }
-
+.number-list li:nth-child(1) .number-page {
+  background-color: #ffffff;
+  color: #000;
+}
 /* catalog */
-
 .broadcrumps-list {
   padding: 14px 11px 1px 26.5px;
 }
@@ -1045,9 +1066,10 @@ input:checked + .checkbox-square {
   margin-top: 36px;
   margin-left: 3px;
 }
-.item-ice .col-3 {
+.item-ice_catalog .col-3 {
   margin-bottom: 23px;
 }
-.item-ice .col-3 p {
-  padding: 0 10px;
+.ice-wrapper_catalog {
+  padding: 0 12.5px;
+  position: relative;
 }
