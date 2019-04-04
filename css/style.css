@@ -34,13 +34,14 @@ header {
   height: 100%;
   width: 100%;
   margin-left: 3px;
+  padding: 17px 0;
 }
 .col-logo {
   width: 154px;
 }
 .col-navigation {
   flex-grow: 1;
-  padding: 0 2.2%;
+  padding: 0 1.2%;
 }
 .col-profile {
   width: 249px;
@@ -52,7 +53,6 @@ header {
 .navigation-list{
   height: 100%;
   display: flex;
-  align-items: center;
   margin-top: -3px;
 }
 .navigation-list li {
@@ -65,15 +65,30 @@ header {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255, 0.5);
+}
+.navigation-list a:hover{
+  padding: 6px 14px 7px 13px;
+  border-radius: 17px;
+  background-color: #fff;
+  color: #000;
+}
+.navigation-list a:active{
+  padding: 6px 14px 7px 13px;
+  border-radius: 17px;
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px #696969;
+  color: #000;
 }
 .navigation-list li:nth-child(1) a{
-  padding: 0px 14px 0 0;
+  padding: 6px 14px 7px 11px;
 }
 .navigation-list li:nth-child(2) a{
-  padding: 0px 14px;
+  padding: 6px 14px 7px 14px;
 }
 .navigation-list li:nth-child(3) a{
-  padding: 0px 14px;
+  padding: 6px 14px 7px 14px;
 }
 .cont-loupe {
   position: relative;
@@ -605,23 +620,40 @@ header {
   margin: 0 auto;
   line-height: 0;
 }
-.adress,
 .phone {
   color: #323232;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
-.city,
+.city {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
 .number {
   color: #323232;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
+}
+.hour {
+  margin-bottom: 36px;
+}
+.adress {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 2px;
 }
 .adress-block {
   width: 302px;
@@ -637,13 +669,14 @@ header {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-  border-radius: 10px;
+  border-radius: 24px;
   color: #fefefe;
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   border: none;
+  padding: 9px 26px 12px 29px;
 }
 .map iframe {
   border: none;
@@ -672,7 +705,7 @@ footer {
   height: 68px;
 }
 .logo-img img{
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 .col-links {
   flex-grow: 1;
