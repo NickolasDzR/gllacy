@@ -31,6 +31,7 @@ header {
   padding: 9px 0;
 }
 .navigation-wrapper {
+  position: relative;
   height: 100%;
   width: 100%;
   margin-left: 3px;
@@ -58,7 +59,8 @@ header {
 .navigation-list li {
   display: inline-block;
 }
-.navigation-list a {
+.navigation-list a,
+.catalog-link {
   display: block;
   color: #ffffff;
   font-family: Roboto;
@@ -68,27 +70,73 @@ header {
   text-decoration: underline;
   text-decoration-color: rgba(255,255,255, 0.5);
 }
-.navigation-list a:hover{
-  padding: 6px 14px 7px 13px;
+.delivery:hover,
+.about-us:hover,
+.catalog-link:hover{
+  padding: 6px 17px 7px 11px;
   border-radius: 17px;
   background-color: #fff;
   color: #000;
 }
-.navigation-list a:active{
+.delivery:active,
+.about-us:active,
+.catalog-link:active{
   padding: 6px 14px 7px 13px;
   border-radius: 17px;
   background-color: #ededed;
   box-shadow: inset 0 2px 1px #696969;
   color: #000;
 }
-.navigation-list li:nth-child(1) a{
-  padding: 6px 14px 7px 11px;
+.sub-menu {
+  visibility: hidden;
+  position: absolute;
+  top: 45px;
+  left: -8px;
+  padding: 6px 0;
+  z-index: 10;
 }
-.navigation-list li:nth-child(2) a{
-  padding: 6px 14px 7px 14px;
+.navigation-list li:hover .sub-menu {
+  visibility: visible;
 }
-.navigation-list li:nth-child(3) a{
-  padding: 6px 14px 7px 14px;
+.navigation-list li:hover .catalog-link {
+  padding: 6px 17px 7px 11px;
+  border-radius: 17px;
+  background-color: #fff;
+  color: #000;
+}
+.sub-menu-list li {
+  display: block;
+}
+.sub-menu-list {
+  background-color: #f8f7f4;
+  border-radius: 6px;
+  padding: 4px 0 6px;
+  z-index: 10;
+}
+.sub-menu-list p {
+  margin: 0;
+  padding: 0;
+  color: #323232;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 4px 57px 12px 14.7px;
+  border-bottom: 1px solid gray;
+  margin: 2px 8px 0 6px;
+}
+.navigation-list a{
+  padding: 6px 17px 7px 11px;
+}
+.sub-menu-list a {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8.4px 18px 7.1px 20.8px;
+  cursor: pointer;
+  display: block;
 }
 .cont-loupe {
   position: relative;
@@ -109,10 +157,44 @@ header {
   left: 8px;
   opacity: 1;
 }
+.input-text {
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+  position: absolute;
+  top: 52px;
+  left: -309px;
+  z-index: 10;
+  padding: 20px 14px 19px 15px;
+  border-radius: 7px;
+}
+.input-text {
+  visibility: hidden;
+}
+.input-text input {
+  padding: 12px 124px 14px 13px;
+  border: 1px solid #d3d3d2;
+  border-radius: 6px;
+}
+.menu-list li:hover .input-text {
+  visibility: visible;
+}
+.cont-loupe:hover {
+  background-color: #f8f7f4;
+}
+.cont-loupe:hover::before {
+  content: url("../img/loupe-black.svg");
+}
+.menu-list li:hover .cont-loupe::before {
+  content: url("../img/loupe-black.svg");
+}
+.menu-list li:hover .cont-loupe {
+  background-color: #f8f7f4;
+}
 .menu-item_right {
   height: 100%;
 }
 .menu-list {
+  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
