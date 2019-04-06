@@ -181,9 +181,6 @@ header {
 .cont-loupe:hover {
   background-color: #f8f7f4;
 }
-.cont-loupe:hover::before {
-  content: url("../img/loupe-black.svg");
-}
 .menu-list li:hover .cont-loupe::before {
   content: url("../img/loupe-black.svg");
 }
@@ -237,7 +234,7 @@ header {
   padding: 0;
   margin: 0;
 }
-.cont-enter{
+.cont-enter {
   position: relative;
   background-color: rgba(255,254,255,0.2);
   padding: 8px 14px 8px 42px;
@@ -254,6 +251,73 @@ header {
   top: 7px;
   left: 16px;
   opacity: 1;
+}
+.menu-list li:hover .cont-enter::before {
+  content: url("../img/enter-black.svg");
+}
+.menu-list li:hover .cont-enter {
+  background-color: #f8f7f4;
+  color: #000;
+}
+.enter-form {
+  visibility: hidden;
+  position: absolute;
+  top: 53px;
+  right: 111px;
+  padding: 19px 17px 21px 18px;
+  border-radius: 7px;
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+  z-index: 10;
+  width: 279px;
+}
+.menu-list li:hover .enter-form {
+  visibility: visible;
+}
+.enter-form input {
+  padding: 12px 14px 14px 13px;
+  border: 1px solid #d3d3d2;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.enter {
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  border-radius: 20px;
+  color: #fefefe;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  padding: 11px 25px 10px 25px;
+  display: block;
+}
+.link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links-form a {
+  display: block;
+  color: #979795;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+}
+.button-wrapper {
+  margin-right: 20px;
+}
+.forgot-password {
+  margin-top: 2px;
+  border-bottom: 1px solid #979795;
+  margin-right: 17px;
+}
+.new-registration {
+  margin-top: 3.8px;
+  border-bottom: 1px solid #979795;
+  margin-right: 0px;
 }
 .cont-basket {
   position: relative;
