@@ -34,7 +34,7 @@ header {
   position: relative;
   height: 100%;
   width: 100%;
-  margin-left: 3px;
+  margin-left: 1px;
   padding: 17px 0;
 }
 .col-logo {
@@ -100,7 +100,7 @@ header {
   visibility: visible;
 }
 .navigation-list li:hover .catalog-link {
-  padding: 6px 17px 7px 11px;
+  padding: 6px 14px 7px 13px;
   border-radius: 17px;
   background-color: #fff;
   color: #000;
@@ -125,27 +125,36 @@ header {
   font-weight: 700;
   line-height: 16px;
   padding: 4px 57px 12px 14.7px;
-  border-bottom: 1px solid gray;
-  margin: 2px 8px 0 6px;
 }
 .navigation-list a{
-  padding: 6px 17px 7px 11px;
+  padding: 6px 15px 7px 13px;
 }
 .sub-menu-list a {
   color: #323232;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
-  line-height: 16px;
-  padding: 8.4px 18px 13.1px 19.8px;
+  padding: 0 19px;
   cursor: pointer;
   display: block;
   text-decoration: none;
 }
-.sub-menu-list li:nth-child(4) a {
-  padding: 8.4px 18px 13.1px 19.8px;
+.new-text {
+  padding: 5px 19px 12px;
 }
-.sub-menu-list li:nth-child(4) a:hover .sub-menu-list {
+.sub-menu-list li:nth-child(2) a {
+  padding: 6.5px 19px;
+}
+.sub-menu-list li:nth-child(3) a {
+  padding: 6.5px 18px;
+}
+.sub-menu-list li:nth-child(4) a {
+  padding: 6.5px 18px;
+}
+.sub-menu-list li:nth-child(5) a {
+  padding: 6.5px 19px 12px;
+}
+.sub-menu-list li:nth-child(5) a:hover .sub-menu-list {
   border-radius: 6px;
 }
 .sub-menu-list a:hover {
@@ -154,12 +163,6 @@ header {
 .sub-menu-list a:active {
   background-color:#f6b5a5;
 }
-/* staying on the page 
-.sub-menu-list a:focus {
-  background-color:#d07058;
-  color: #fff;
-}
-  staying on the page */
 .cont-loupe {
   position: relative;
   width: 33px;
