@@ -140,6 +140,7 @@ header {
   padding: 8.4px 18px 13.1px 19.8px;
   cursor: pointer;
   display: block;
+  text-decoration: none;
 }
 .sub-menu-list li:nth-child(4) a {
   padding: 8.4px 18px 13.1px 19.8px;
@@ -194,6 +195,17 @@ header {
 .input-text input {
   padding: 12px 124px 14px 13px;
   border: 1px solid #d3d3d2;
+  border-radius: 6px;
+  color: #999999;
+}
+.input-text input:hover {
+  padding: 11px 123px 13px 12px;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  border-radius: 6px;
+}
+.input-text input:focus {
+  padding: 11px 123px 13px 12px;
+  border: 2px solid rgba(46, 136, 228, 0.52);
   border-radius: 6px;
 }
 .menu-list li:hover .input-text {
@@ -291,6 +303,16 @@ header {
   background-color: #ffffff;
   z-index: 10;
   width: 279px;
+}
+.enter-form input:hover {
+  padding: 11px 12px 13px 12px;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  border-radius: 6px;
+}
+.enter-form input:focus {
+  padding: 11px 12px 13px 12px;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 6px;
 }
 .menu-list li:hover .enter-form {
   visibility: visible;
@@ -505,6 +527,7 @@ header {
   background-repeat: no-repeat;
   border-radius: 15px;
   padding: 15px 15px 36.1px 18.2px;
+  background-color: #440310;
 }
 .chocolate-container {
   width: 48.767%;
@@ -512,6 +535,7 @@ header {
   background-repeat: no-repeat;
   border-radius: 15px;
   padding: 15px 15px 36.1px 18.2px;
+  background-color: #653c28;
 }
 .buy-link {
   text-align: right;
@@ -707,21 +731,11 @@ header {
   margin: 0 2.3% 40px 2.3%;
   padding: 8px 0 14px 0;
   z-index: 100;
+  background-color: #e4d4b4;
 }
 .container-item {
-  /*
-  background: url("../img/wafes.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  */
   display: flex;
   flex-wrap: wrap;
-  /*
-  width: 95.5%;
-  border-radius: 15px;
-  margin: 0 2.3%;
-  padding: 8px 0;
-  */
 }
 .advantages-list {
   display: flex;
@@ -796,6 +810,7 @@ header {
   border-radius: 15px;
   padding: 21px 1.8% 21px;
   height: 220px;
+  background-color: #fff;
 }
 .new-inblog {
   color: #323232;
@@ -821,6 +836,7 @@ header {
   border-radius: 15px;
   padding: 4.5px;
   height: 220px;
+  background-color: #f8f7f4;
 }
 .callback-block {
   background-color: #f8f7f4;
