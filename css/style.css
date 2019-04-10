@@ -783,12 +783,13 @@ header {
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   border-radius: 20px;
   cursor: pointer;
-  padding: 9px 6% 12px;
-  margin-bottom: 21px;
+  padding: 9px 16px 12px;
+  margin-bottom: 30px;
+  height: 44px;
 }
 .link-wrapper_hover {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-around;
   visibility: hidden;
   position: absolute;
@@ -1542,16 +1543,13 @@ input:disabled + .checkbox-circle {
   appearance: none;
 }
 .icon-down-dir {
-  position: relative;
-}
-.icon-down-dir {
   background: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 13px;
-  left: 180px;
+  top: 53px;
+  left: 195px;
 }
 .icon-down-dir-black {
   background: url(../img/icon-down-dir-black.svg);
@@ -1559,8 +1557,8 @@ input:disabled + .checkbox-circle {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 13px;
-  left: 180px;
+  top: 53px;
+  left: 195px;
 }
 .sort-span:hover {
   color: #323232;
@@ -1576,6 +1574,7 @@ input:disabled + .checkbox-circle {
   fill: #ffffff;
 }*/
 .sort-wrapper {
+  position: relative;
   padding: 15px 15px;
   margin-bottom: 23px;
 }
@@ -1614,7 +1613,6 @@ input:disabled + .checkbox-circle {
   flex-wrap: wrap;
 }
 .col-sort {
-  position: relative;
   padding: 0;
   margin: 0;
   width: 23.521%;
@@ -1783,4 +1781,8 @@ input:disabled + .checkbox-circle {
 iframe {
   width: 100%;
   height: 430px;
+}
+select::-ms-expand {
+  display: none;
+  text-overflow: '';
 }
