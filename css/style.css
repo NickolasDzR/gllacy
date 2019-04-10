@@ -1541,22 +1541,6 @@ input:disabled + .checkbox-circle {
   -moz-appearance: none;
   appearance: none;
 }
-.sort-span option {
-
-}
-select.desktopDropDown {
-  outline : none;
-  overflow : hidden;
-  text-indent : 0.01px;
-  text-overflow : '';
-  background : url("../img/assets/arrow.png") no-repeat right #666;
-
-  -webkit-appearance: none;
-     -moz-appearance: none;
-      -ms-appearance: none;
-       -o-appearance: none;
-          appearance: none;
-}
 .icon-down-dir {
   position: relative;
 }
@@ -1795,4 +1779,8 @@ select.desktopDropDown {
   height: 100%;
   width: 100%;
   z-index: 999;
+}
+iframe {
+  width: 100%;
+  height: 430px;
 }
