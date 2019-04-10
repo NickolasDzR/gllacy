@@ -23,11 +23,11 @@
         <div class="col-navigation">
           <div class="navigation-wrapper">
             <ul class="navigation-list">
-              <li><a class="catalog-link">Каталог</a>
+              <li><a class="catalog-link_red">Каталог</a>
                 <div class="sub-menu">
                   <ul class="sub-menu-list">
                     <li class="new-text">Новинки</li>
-                    <li><a href="catalog.html">Сливочное</a></li>
+                    <li><a class="milky-link" href="catalog.html">Сливочное</a></li>
                     <li><a href="#smth">Щербеты</a></li>
                     <li><a href="#smth">Фруктовый лед</a></li>
                     <li><a href="#smth">Мелорин</a></li>
@@ -105,9 +105,9 @@
     <main>
       <div class="col-broadcrumps">
         <ul class="broadcrumps-list">
-          <li>Главная</li>
-          <li>Каталог</li>
-          <li>Сливочное</li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Сливочное</a></li>
         </ul>
       </div>
       <div class="headline">
@@ -119,7 +119,13 @@
         <form action="GET">
           <fieldset class="col-sort">
             <legend class="legend-sort">Сортировка:</legend>
-            <div class="sort-span">по популярности</div>
+            <div class="icon-down-dir"></div>
+              <select class="sort-span">
+                <option value="по популярности">по популярности</option>
+                <option value="сначала недорогие">сначала недорогие</option>
+                <option value="сначала дорогие">сначала дорогие</option>
+                <option value="по жирности">по жирности</option>
+              </select>
           </fieldset>
           <fieldset class="col-cost">
             <legend class="legend-cost">Цена: 100 руб. – 500 руб.</legend>
@@ -135,19 +141,19 @@
             <div class="fatness">
               <label class="checkbox-label">
                 <p><label class="filter-checkbox-circle">
-                    <input class="visually-hidden" type="checkbox">
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="checkbox-circle"></span>
                     0%
                   </label>
                 </p>
                 <p><label class="filter-checkbox-circle">
-                    <input class="visually-hidden" type="checkbox">
+                    <input class="visually-hidden" type="checkbox" checked>
                     <span class="checkbox-circle"></span>
                     до 10%
                   </label>
                 </p>
                 <p><label class="filter-checkbox-circle">
-                    <input class="visually-hidden" type="checkbox">
+                    <input class="visually-hidden" type="checkbox" disabled>
                     <span class="checkbox-circle"></span>
                     до 30%
                   </label>
@@ -177,13 +183,13 @@
                 </label>
               </p>
               <p><label class="filter-checkbox-square">
-                  <input class="visually-hidden" type="checkbox">
+                  <input class="visually-hidden" type="checkbox" checked>
                   <span class="checkbox-square"></span>
                   фрукты
                 </label>
               </p>
               <p><label class="filter-checkbox-square">
-                  <input class="visually-hidden" type="checkbox">
+                  <input class="visually-hidden" type="checkbox" disabled>
                   <span class="checkbox-square"></span>
                   сиропы
                 </label>
@@ -467,6 +473,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/script_catalog.js">
+    </script>
 </body>
 
 </html>
