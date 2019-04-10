@@ -273,26 +273,116 @@ header {
   opacity: 1;
 }
 .your-order {
+  visibility: hidden;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   top: 53px;
   right: 5px;
-  padding: 10px 10px;
+  padding: 10px 15px 20px 15px;
   z-index: 100;
   background-color: #f8f7f4;
   width: 539px;
   border-radius: 6px;
 }
+.your-order p {
+  padding: 0;
+  margin: 0;
+}
 .orange-ice,
 .white-chocolate {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+}
+.orange-ice {
+  padding: 10px 0 10px 27px;
+}
+.white-chocolate {
+  padding: 10px 0 9px 27px;
+}
+.your-order .paragraph-text-ice {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8px 12px;
+  max-width: 242px;
+}
+.your-order .paragraph-weight {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 8px 19px;
+}
+.your-order .paragraph-weight span{
+  color: #999999;
+}
+.your-order .paragraph-cost {
+  padding: 6px 11px;
 }
 .small-ice_one,
 .small-ice_two {
   display: block;
   float: left;
+  width: 33px;
+  height: 33px;
+}
+.total-cost-wrapper {
+  text-align: end;
+  width: 100%;
+}
+.total-cost {
+  border-top: 1px solid #cacac7;
+}
+.close-button {
+  cursor: pointer;
+}
+.close-button::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 4px;
+  width: 15px;
+  height: 1px;
+  border-top: 1px solid #575454;
+  transform: rotate(45deg);
+}
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 4px;
+  width: 15px;
+  height: 1px;
+  border-top: 1px solid #575454;
+  transform: rotate(-45deg);
+}
+.menu-list li:hover .your-order {
+  visibility: visible;
+}
+.menu-list .checkout {
+  display: inline-block;
+  color: #fefefe;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  box-shadow: 0 1px 2px #ac1000;
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  padding: 10px 13px 11px 14px;
+}
+.your-order .total-cost p {
+  color: #323232;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 14px 0px;
 }
 .contacts {
   position: absolute;
@@ -612,7 +702,8 @@ header {
   margin-bottom: 13px;
 }
 .jam,
-.chocolate {
+.chocolate,
+.checkout {
   color: #ffffff;
   font-family: Roboto;
   font-size: 18px;
@@ -686,7 +777,8 @@ header {
 .chocolate:hover,
 .send-email:hover,
 .popup:hover,
-.fast-show:hover {
+.fast-show:hover,
+.checkout:hover {
   box-shadow: 0 2px 2px #ac1000;
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 }
@@ -694,7 +786,8 @@ header {
 .chocolate:active,
 .send-email:active,
 .popup:active,
-.fast-show:active {
+.fast-show:active,
+.checkout:active {
   box-shadow: inset 0 2px 2px #942718;
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
